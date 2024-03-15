@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Green Store</title>
+<link rel="icon" type="icon" href="images/logo.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+  body { 
+            width: 960px; 
+            font-family: sans-serif; 
+            line-height: 1.5; 
+            background-color: lightgreen;
+            background-image: linear-gradient(green, greenyellow);
+            display: table-cell;
+            vertical-align: middle;
+        } 
+
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 0px;
+  background-color: #background-color;
+  border: 0px ;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  
+  padding: 14px 60px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover {
+  background-color: #18BC33;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  background-color: green;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+    .imcontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+    }
+
+    .image-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: opacity 0.5s;
+    }
+
+    .image-container:hover img {
+        opacity: 0.7;
+    }
+
+    .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    .image-container:hover .text-overlay {
+        opacity: 1;
+    }
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/greensc.png" alt="greens" style="width:960px; height:250px;">
+  <div class="centered" style="font-family: Sofia;  font-weight: bold; font-size: 40px; text-shadow: 2px 0px black;">
+    <Br>
+    The Green Store
+    <Br>
+    <p style="font-size: 15px;font-family: Arial; color: black; font-weight: bold;  text-shadow: 2px 0px 5px white;">
+    The Store that has all the Grenn things!!
+   </p> 
+  </div>
+   
+</div>
+
+<div class="sticky"  style=" z-index: 1">
+<ul>
+  <li><a href="store-home.htm" >Home</a></li>
+  <li><a href="store-products.htm" >Products</a></li>
+  <li><a href="store-services.htm" class="active">Services</a></li>
+  <li><a href="store-news.htm" >News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">About us</a>
+    <div class="dropdown-content">
+      <a href="store-Contact.htm">Contact us</a>
+      <a href="store-Staff.htm">Staff</a>
+      <a href="store-Mission.htm">Our Mission</a>
+     
+    </div>
+  </li>
+</ul>
+</div>
+ <div style="text-align: center">
+
+
+<div class="imcontainer">
+    <div class="image-container">
+        <img src="images/hair.png" alt="hair">
+        <div class="text-overlay">Green Hairdresser <br> (We paint green hair and nails)</div>
+    </div>
+    <div class="image-container">
+        <img src="images/BMW.png" alt="BMW">
+        <div class="text-overlay"> Paint cars green <br> (We also paint motorbikes, bicycles and all other vehicles with the best green colors!) </div>
+    </div>
+  <div class="image-container">
+        <img src="images/grass.png" alt="Grass">
+        <div class="text-overlay">We place grass or any other green vegetation wherever you want!</div>
+    </div>
+  <div class="image-container">
+        <img src="images/painter.png" alt="Painter">
+        <div class="text-overlay">We paint any room of your house office or any other place in green.</div>
+    </div>
+  
+    <!-- Add more image-container divs as needed -->
+</div>
+
+
+</div>
+
+</body>
+</html>

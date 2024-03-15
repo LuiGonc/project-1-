@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Green Store</title>
+<link rel="icon" type="icon" href="images/logo.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+  body { 
+            width: 960px; 
+            font-family: sans-serif; 
+            line-height: 1.5; 
+            background-color: lightgreen;
+            background-image: linear-gradient(green, greenyellow);
+           display: table-cell;
+            vertical-align: middle;
+        } 
+
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 0px;
+  background-color: #background-color;
+  border: 0px ;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  
+  padding: 14px 60px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover {
+  background-color: #18BC33;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  background-color: green;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/greensc.png" alt="greens" style="width:960px; height:250px;">
+  <div class="centered" style="font-family: Sofia;  font-weight: bold; font-size: 40px; text-shadow: 2px 0px black;">
+    <Br>
+    The Green Store
+    <Br>
+    <p style="font-size: 15px;font-family: Arial; color: black; font-weight: bold;  text-shadow: 2px 0px 5px white;">
+    The Store that has all the Grenn things!!
+   </p> 
+  </div>
+   
+</div>
+
+<div class="sticky">
+<ul>
+  <li><a href="store-home.htm" >Home</a></li>
+  <li><a href="store-products.htm" >Products</a></li>
+  <li><a href="store-services.htm" >Services</a></li>
+  <li><a href="store-news.htm" >News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn; active" >About us</a>
+    <div class="dropdown-content">
+      <a href="store-Contact.htm">Contact us</a>
+      <a href="store-Staff.htm">Staff</a>
+      <a href="store-Mission.htm">Our Mission</a>
+     
+    </div>
+  </li>
+</ul>
+</div>
+    <section>
+        <h2>Innovative Solutions for a Sustainable World</h2>
+        <p>At The Green Store, we're more than just a store; we're a commitment to a greener future. As a leading force in sustainable technology, 
+       we strive to revolutionize industries while minimizing our environmental footprint. Our dedication to green practices permeates every aspect of 
+our operations, from product development to daily office routines.</p>
+
+        <h2>Environmental Stewardship</h2>
+        <p>Our core mission is to harness the power of technology to address pressing environmental challenges. From renewable energy solutions to eco-friendly manufacturing processes, we develop innovative products and services that prioritize sustainability without compromising efficiency or quality. Whether it's solar energy systems, energy-efficient appliances, or waste reduction technologies, we're constantly pushing the boundaries of what's possible in the pursuit of a cleaner, greener planet.</p>
+
+        <h2>Environmental Stewardship</h2>
+        <p>At The Green Store, we understand that true sustainability extends beyond our products; it's ingrained in our corporate culture. We're committed to minimizing our environmental impact at every turn. Our facilities are designed with energy efficiency in mind, utilizing renewable energy sources and implementing waste reduction strategies. We prioritize sustainable sourcing and ethical practices throughout our supply chain, ensuring that our products meet the highest environmental standards from conception to delivery.</p>
+
+        <h2>Empowering Communities</h2>
+        <p>We believe that sustainability is a collective effort, and we're dedicated to empowering communities to join us in the fight against climate change. Through outreach programs, educational initiatives, and partnerships with local organizations, we strive to raise awareness about environmental issues and promote sustainable living practices. By fostering a culture of environmental responsibility, we're building a brighter future for generations to come.</p>
+
+        <h2>Transparency and Accountability</h2>
+        <p>Transparency is at the heart of everything we do. We believe in accountability to our customers, our employees, and the planet. That's why we're committed to openly sharing our environmental performance metrics, setting ambitious sustainability goals, and regularly evaluating our progress. By holding ourselves to the highest standards of integrity and accountability, we're leading by example and inspiring others to follow suit.</p>
+
+        <h2>Join Us in Building a Greener Future</h2>
+        <p>At The Green Store, we're not just imagining a world where sustainability is the norm – we're making it a reality. Through innovation, collaboration, and unwavering dedication, we're paving the way towards a brighter, more sustainable future for all. Join us on our journey as we continue to redefine what it means to be green. Together, we can make a difference.</p>
+    </section>
+
+</body>
+</html>
